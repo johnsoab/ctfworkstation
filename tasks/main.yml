@@ -18,20 +18,20 @@
 - name: Install NotePad++
   win_chocolatey:
     name: notepadplusplus.install
-    version: latest
+    version: 7.5.7
 
 - name: Setup Firefox override
   win_copy:
     src: files/override.ini 
-    dest: 'c:\ProgramFiles(x86)\Mozilla Firefox\browser\'
+    dest: 'c:\Program Files\Mozilla Firefox\browser\'
 
 - name: Setup Firefox local-settings default pref
   win_copy:
     src: files/local-settings.js
-    dest: 'c:\ProgramFiles(x86)\Mozilla Firefox\defaults\pref\'
+    dest: 'c:\Program Files\Mozilla Firefox\defaults\pref\'
 
 - name: Setup Firefox Proxy config
   win_copy:
     src: files/mozilla.cfg
-    dest: 'c:\ProgramFiles(x86)\Mozilla Firefox\'
+    dest: 'c:\Program Files\Mozilla Firefox\'
 
