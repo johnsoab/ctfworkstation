@@ -20,6 +20,10 @@
     name: notepadplusplus.install
     version: 7.5.7
 
+- name: Install AWS CLI
+  win_chocolatey:
+    name: awscli
+
 - name: Setup Firefox override
   win_copy:
     src: files/override.ini 

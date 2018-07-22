@@ -1,0 +1,6 @@
+---
+- name: Deploy workstation role on base
+  hosts: 
+    ctfwrk10101.eastus.cloudapp.azure.com
+  roles:
+    - ctfworkstation
