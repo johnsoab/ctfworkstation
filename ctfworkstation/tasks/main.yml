@@ -3,17 +3,14 @@
 - name: Install Burp Suite Free
   win_chocolatey:
     name: burp-suite-free-edition
-    version: latest
 
 - name: Install Firefox
   win_chocolatey:
     name: firefox
-    version: latest
 
 - name: Install putty
   win_chocolatey:
     name: putty
-    version: latest
     
 - name: Install NotePad++
   win_chocolatey:
